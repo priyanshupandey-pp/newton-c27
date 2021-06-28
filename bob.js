@@ -4,9 +4,9 @@ class bob
 	{
 		var options={
 			isStatic:false,
-			restitution:1,
-			frictionAir:1,
-		//	density:0.8
+			restitution:1.4,
+			frictionAir:0.01,
+		    density:4
 			
 			}
 		this.x=x;
@@ -24,7 +24,7 @@ class bob
 			push()
 			translate(paperpos.x, paperpos.y);
 			rectMode(CENTER)
-			//strokeWeight(4);
+			strokeWeight(4);
 			fill(255,0,255)
 			//imageMode(CENTER);
 			//image(this.image, 0,0,this.r, this.r)
